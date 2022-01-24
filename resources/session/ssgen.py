@@ -9,16 +9,6 @@
 import os
 from time import sleep
 
-ULTROID = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
-"""
-
-
 def spinner():
     print("Checking if Telethon is installed...")
     for _ in range(3):
@@ -78,11 +68,11 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as ultroid:
-            print("Generating a string session for •ULTROID•")
+            print("Generating a string session ••")
             try:
                 ult = ultroid.send_message(
                     "me",
-                    f"**ULTROID** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
+                    f"**KingSahan** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
